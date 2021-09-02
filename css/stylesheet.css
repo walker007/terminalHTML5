@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+body{
+    background-color: black;
+    color: green;
+    font-family: Ubuntu;
+}
+
+.console_string_systemOutput{
+    color: white;
+}
+
+#console_string_text,
+.console_string_text{
+    color: white;
+    font-weight: bold;
+    margin-left: 9px;
+    margin-right: -9px;
+}
+
+#console_string,
+.console_string{
+    display: flex;
+}
+
+#console_string_cursor{
+    display: block;
+    height: 17px;
+    width: 8px;
+    margin-left: 9px;
+    animation: blink 1200ms linear infinite;
+}
+
+@keyframes blink {
+  0% {
+      background: #ffffff;
+  }
+  49% {
+      background: #ffffff;
+  }
+  60% {
+      background: transparent;
+  }
+  99% {
+      background: transparent;
+  }  100% {
+      background: #ffffff;
+  }
+}
